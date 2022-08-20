@@ -57,8 +57,12 @@
 				<p>The inspiration for this app came from my need to sync my schedule with friends and family. I built
 					it using <strong>JavaScript + React.js + Redux.js</strong> in the frontend and <strong>Python +
 						Flask + SQLAlchemy + PostgreSQL</strong> in the backend.</p>
-				<a href="https://clique-calendar.herokuapp.com/" target="_blank"><strong>Live Site</strong></a>
-				<a href="https://github.com/jkintner25/clique-calendar" target="_blank"><strong>Git Repo</strong></a>
+				<div style="display: flex; flex-direction: column; width: fit-content;">
+					<a style="margin-bottom: 10px;" href="https://clique-calendar.herokuapp.com/"
+						target="_blank"><strong>Live Site</strong></a>
+					<a style="margin-bottom: 10px;" href="https://github.com/jkintner25/clique-calendar"
+						target="_blank"><strong>Github Repo</strong></a>
+				</div>
 				<img class="site-clip" src="images/calendarSplash.PNG" alt="" />
 				<img class="site-clip" src="images/CalendarView.PNG" alt="" />
 				<img class="site-clip" src="images/CalendarEditEvent.PNG" alt="" />
@@ -67,9 +71,16 @@
 			<!-- Work -->
 			<article id="eventzeit">
 				<h2 class="major">Eventzeit</h2>
-				<p>This web app was inspired by Eventbrite. I had the pleasure of working with three colleagues to bring the project to completion. One of my duties was <strong>implementing Google Maps API</strong> to render a map centered on the event location, displayed on each event details page. I also built out and integrated the functionality associated with purchasing, displaying, and returning tickets.</p>
-				<a href="https://eventzeit.herokuapp.com/" target="_blank"><strong>Live Site</strong></a>
-				<a href="https://github.com/Patricus/Eventzeit" target="_blank"><strong>Git Repo</strong></a>
+				<p>This web app was inspired by Eventbrite. I had the pleasure of working with three colleagues to bring
+					the project to completion. One of my duties was <strong>implementing Google Maps API</strong> to
+					render a map centered on the event location, displayed on each event details page. I also built out
+					and integrated the functionality associated with purchasing, displaying, and returning tickets.</p>
+				<div style="display: flex; flex-direction: column; width: fit-content;">
+					<a style="margin-bottom: 10px;" href="https://eventzeit.herokuapp.com/" target="_blank"><strong>Live
+							Site</strong></a>
+					<a style="margin-bottom: 10px;" href="https://github.com/Patricus/Eventzeit"
+						target="_blank"><strong>Github Repo</strong></a>
+				</div>
 				<img class="site-clip" src="images/EventzeitSplash.PNG" alt="" />
 				<img class="site-clip" src="images/EventzeitEvents.PNG" alt="" />
 				<img class="site-clip" src="images/EventzeitEventDetails.PNG" alt="" />
@@ -139,7 +150,8 @@
 						<p>Git</p>
 					</div>
 					<div class="skill-box">
-						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sequelize/sequelize-original.svg" />
+						<img
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sequelize/sequelize-original.svg" />
 						<p>Sequelize</p>
 					</div>
 					<div class="skill-box">
@@ -186,10 +198,22 @@
 				</p>
 			</article>
 
+
 			<!-- Contact -->
 			<article id="contact">
 				<h2 class="major">Contact</h2>
-				<form method="post" action="mailto:jkintner25@gmail.com">
+				<div
+					style="cursor: default; display: flex; flex-direction: row; justify-content: left; margin: 0 0 18px 0;">
+					<div class="contact-info-box">
+						<label style="margin: 0 0 8px 0;">Email</label>
+						<p style="margin: 0;">jkintner@me.com</p>
+					</div>
+					<div class="contact-info-box phone">
+						<label style="margin: 0 0 8px 0;">Phone</label>
+						<p style="margin: 0;">205.540.2072</p>
+					</div>
+				</div>
+				<form method="post" name="contact" data-netlify="true">
 					<div class="fields">
 						<div class="field half">
 							<label for="name">Name</label>
@@ -209,6 +233,14 @@
 						<li><input type="reset" value="Reset" /></li>
 					</ul>
 				</form>
+				<div style="width: 100%; justify-content: center; display: flex;">
+					<a style="margin: 0 20px; border: 0;" href="https://github.com/jkintner25" target="_blank"><i
+							class="fa-brands fa-github"></i></a>
+					<a style="margin: 0 20px; border: 0;" href="https://github.com/jkintner25" target="_blank"><i
+							class="fa-brands fa-linkedin"></i></a>
+					<a style="margin: 0 20px; border: 0;" href="https://angel.co/u/jeffrey-kintner"
+						target="_blank"><i class="fa-brands fa-angellist"></i></a>
+				</div>
 			</article>
 
 			<!-- Elements -->
@@ -221,7 +253,8 @@
 						<em>emphasized</em>.
 						This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
 						This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a
-							href="#">this is a link</a>.</p>
+							href="#">this is a link</a>.
+					</p>
 					<hr />
 					<h2>Heading Level 2</h2>
 					<h3>Heading Level 3</h3>
@@ -417,7 +450,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 							<div class="field half">
 								<label for="demo-email">Email</label>
 								<input type="email" name="demo-email" id="demo-email" value=""
-									placeholder="jane@untitled.tld" />
+								placeholder="jane@untitled.tld" />
 							</div>
 							<div class="field">
 								<label for="demo-category">Category</label>
