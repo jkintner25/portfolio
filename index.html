@@ -39,7 +39,7 @@
 			</div>
 			<nav>
 				<ul>
-					<li><a href="#cliqueCalendar">Clique Calendar</a></li>
+					<li><a href="#picpicker">Pic Picker</a></li>
 					<li><a href="#eventzeit">Eventzeit</a></li>
 					<li><a href="#skills">Skills</a></li>
 					<li><a href="#about">About</a></li>
@@ -52,25 +52,24 @@
 		<div id="main">
 
 			<!-- Intro -->
-			<article id="cliqueCalendar">
-				<h2 class="major">Clique Calendar</h2>
-				<p>The inspiration for this app came from my need to sync my schedule with friends and family. I built
-					it using <strong>JavaScript + React.js + Redux.js</strong> in the frontend and <strong>Python +
-						Flask + SQLAlchemy + PostgreSQL</strong> in the backend.</p>
-				<p>Notable features of this app include sharing calendars and live-chatting among users who share a particular calendar.
-					Live-chat is handled using <strong>Socket IO</strong>, a library which utilizes web-sockets.
+			<article id="picpicker">
+				<h2 class="major">Pic Picker</h2>
+				<p>The inspiration for this app came from a coding competition/challenge hosted by a discord server. The
+					challenge was to build and host a web app that allows users to view images which they can add or remove
+					to/from
+					their collection of favorites. We were required to use localStorage to accomplish this. I built
+					my app using <strong>JavaScript + React.js + Next.js + Tailwind.CSS</strong>.</p>
+				<p>Notable features include utilizing the useReducer React Hook and the Unsplash API to 1)pull recent images and
+					2)search images based on keyword(s).
 				</p>
 				<div style="display: flex; flex-direction: column; width: fit-content;">
-					<a style="margin-bottom: 10px;" href="https://clique-calendar.herokuapp.com/"
-						target="_blank"><strong>Live Site</strong></a>
-					<a style="margin-bottom: 10px;" href="https://github.com/jkintner25/clique-calendar"
-						target="_blank"><strong>Github Repo</strong></a>
+					<a style="margin-bottom: 10px;" href="https://picpicker-eta.vercel.app/" target="_blank"><strong>Live
+							Site</strong></a>
+					<a style="margin-bottom: 10px;" href="https://github.com/jkintner25/picpikker" target="_blank"><strong>Github
+							Repo</strong></a>
 				</div>
-				<img class="site-clip" src="images/calendarSplash.PNG" alt="" />
-				<img class="site-clip" src="images/CalendarView.PNG" alt="" />
-				<img class="site-clip" src="images/CreateEvent.PNG" alt="" />
-				<img class="site-clip" src="images/ShareCalendar.PNG" alt="" />
-				<img class="site-clip" src="images/Chat.PNG" alt="" />
+				<img class="site-clip" src="images/pp-homepage.PNG" alt="" />
+				<img class="site-clip" src="images/pp-favorites.PNG" alt="" />
 			</article>
 
 			<!-- Work -->
@@ -81,10 +80,10 @@
 					render a map centered on the event location, displayed on each event details page. I also built out
 					and integrated the functionality associated with purchasing, displaying, and returning tickets.</p>
 				<div style="display: flex; flex-direction: column; width: fit-content;">
-					<a style="margin-bottom: 10px;" href="https://eventzeit.herokuapp.com/" target="_blank"><strong>Live
+					<a style="margin-bottom: 10px;" href="https://eventzeit.onrender.com" target="_blank"><strong>Live
 							Site</strong></a>
-					<a style="margin-bottom: 10px;" href="https://github.com/Patricus/Eventzeit"
-						target="_blank"><strong>Github Repo</strong></a>
+					<a style="margin-bottom: 10px;" href="https://github.com/Patricus/Eventzeit" target="_blank"><strong>Github
+							Repo</strong></a>
 				</div>
 				<img class="site-clip" src="images/EventzeitSplash.PNG" alt="" />
 				<img class="site-clip" src="images/EventzeitEvents.PNG" alt="" />
@@ -110,30 +109,25 @@
 						<p>Redux</p>
 					</div>
 					<div class="skill-box">
-						<img
-							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" />
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" />
 						<p>Python</p>
 					</div>
 					<div class="skill-box">
-						<img
-							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original-wordmark.svg" />
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original-wordmark.svg" />
 						<p>Flask</p>
 					</div>
 				</div>
 				<div style="display: flex; flex-direction: row; justify-content: space-around;">
 					<div class="skill-box">
-						<img
-							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" />
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" />
 						<p>Express.js</p>
 					</div>
 					<div class="skill-box">
-						<img
-							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" />
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" />
 						<p>Node.js</p>
 					</div>
 					<div class="skill-box">
-						<img
-							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlalchemy/sqlalchemy-original.svg" />
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlalchemy/sqlalchemy-original.svg" />
 						<p>SQLAlchemy</p>
 					</div>
 					<div class="skill-box">
@@ -155,8 +149,7 @@
 						<p>Git</p>
 					</div>
 					<div class="skill-box">
-						<img
-							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sequelize/sequelize-original.svg" />
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sequelize/sequelize-original.svg" />
 						<p>Sequelize</p>
 					</div>
 					<div class="skill-box">
@@ -174,15 +167,12 @@
 			<article id="about">
 				<h2 class="major">About</h2>
 				<span class="image main"><img src="images/headshot2.jpg" alt="" /></span>
-				<p>I'm a full-stack software engineer living in Birmingham, AL. Coming directly from
-					a career in Professional Dog Training, this is an entirely new adventure for me.
-					Fortunately, I've discovered that mechanisms for problem-solving in training
-					dogs are very similar to those inherent in building web apps&#8212and it's so satisfying!
+				<p>I'm a full-stack software engineer living in Birmingham, AL. As a former dog professional, I've discovered
+					that mechanisms for problem-solving in training
+					dogs are very similar to those inherent in building web apps&#8212. It's such a rewarding process of challenge
+					=> success => challenge => success.
 					<br></br>
-					At this point, I've spent upwards of two-thousand hours studying documentation and
-					writing code. The curriculum at App Academy has challenged me to learn difficult concepts
-					while also testing my growing competence along the way. I've built solo projects
-					and I've contributed to group projects. I incorporate
+					I'm currently employed by Tricorder Array Technologies where I am the lead frontend developer. We're a startup building the technology to allow researchers the ability to better understand and care for the needs of their research animals. Because we are a small company, I'm not only building frontend UIs, I'm managing databases, creating APIs, and building out our devops routines and infrastructure. There's never a dull moment and I'm continually learning. I incorporate
 					<strong>
 						Agile
 					</strong>
@@ -207,8 +197,7 @@
 			<!-- Contact -->
 			<article id="contact">
 				<h2 class="major">Contact</h2>
-				<div
-					style="cursor: default; display: flex; flex-direction: row; justify-content: left; margin: 0 0 18px 0;">
+				<div style="cursor: default; display: flex; flex-direction: row; justify-content: left; margin: 0 0 18px 0;">
 					<div class="contact-info-box">
 						<label style="margin: 0 0 8px 0;">Email</label>
 						<p style="margin: 0;">jkintner@me.com</p>
@@ -243,8 +232,8 @@
 							class="fa-brands fa-github"></i></a>
 					<a style="margin: 0 20px; border: 0;" href="https://github.com/jkintner25" target="_blank"><i
 							class="fa-brands fa-linkedin"></i></a>
-					<a style="margin: 0 20px; border: 0;" href="https://angel.co/u/jeffrey-kintner"
-						target="_blank"><i class="fa-brands fa-angellist"></i></a>
+					<a style="margin: 0 20px; border: 0;" href="https://angel.co/u/jeffrey-kintner" target="_blank"><i
+							class="fa-brands fa-angellist"></i></a>
 				</div>
 			</article>
 
@@ -257,8 +246,8 @@
 					<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is
 						<em>emphasized</em>.
 						This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-						This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a
-							href="#">this is a link</a>.
+						This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a
+							link</a>.
 					</p>
 					<hr />
 					<h2>Heading Level 2</h2>
@@ -454,8 +443,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 							</div>
 							<div class="field half">
 								<label for="demo-email">Email</label>
-								<input type="email" name="demo-email" id="demo-email" value=""
-								placeholder="jane@untitled.tld" />
+								<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
 							</div>
 							<div class="field">
 								<label for="demo-category">Category</label>
@@ -485,8 +473,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 							</div>
 							<div class="field">
 								<label for="demo-message">Message</label>
-								<textarea name="demo-message" id="demo-message" placeholder="Enter your message"
-									rows="6"></textarea>
+								<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
 							</div>
 						</div>
 						<ul class="actions">
